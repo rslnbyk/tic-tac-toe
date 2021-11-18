@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>❌ Tic-Tac-Toe ⭕️</title>
+    <link rel="shortcut icon" type="image/x-icon" href="cross.png" />
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <main>
+      <section class="player player--0 player--active" id="section-1">
+        <h2 class="name" id="name--0">Player 1</h2>
+        <p class="score" id="score--0">0</p>
+        <img src="source-cross.png" class="icon1" />
+      </section>
+      <section class="player player--1" id="section-2">
+        <h2 class="name" id="name--1">Player 2</h2>
+        <p class="score" id="score--1">0</p>
+        <img src="source-circle.png" class="icon2" />
+      </section>
+
+      <table>
+        <tr>
+          <td class="td"></td>
+          <td class="vert td"></td>
+          <td class="td"></td>
+        </tr>
+        <tr>
+          <td class="hori td"></td>
+          <td class="vert hori td"></td>
+          <td class="hori td"></td>
+        </tr>
+        <tr>
+          <td class="td"></td>
+          <td class="vert td"></td>
+          <td class="td"></td>
+        </tr>
+      </table>
+      <button class="btn btn--new">🔄 New game</button>
+    </main>
+
+    <div class="modal hidden">
+      <button class="close-modal">&times;</button>
+      <h1>Results</h1>
+      <p class="message"></p>
+    </div>
+    <div class="overlay hidden"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
